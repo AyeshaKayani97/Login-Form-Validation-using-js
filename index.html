@@ -10,15 +10,15 @@
     <section>
         <div class="container">
             <h1>Login form</h1>
-            <form action="" class="login_form">
+            <form action="home.html" class="login_form" method="post" name="form" onsubmit="return validated()">
                 <div class="input_field">
                     <label for="">Email</label>
-                    <input type="text" placeholder="Enter you email">
+                    <input type="text" placeholder="Enter you email" name="email">
                     <div id="email_error">Please fill up your email or phone</div>
                 </div>
                 <div class="input_field">
                     <label for="">Password</label>
-                    <input type="text" placeholder="Enter you email">
+                    <input type="text" placeholder="Enter you password" name="password">
                     <div id="password_error">Please enter your password</div>
                 </div>
                 <button>Login</button>
@@ -26,5 +26,7 @@
             </form>
         </div>
     </section>
+
+    <script src="js/index.js"></script>
 </body>
 </html>
